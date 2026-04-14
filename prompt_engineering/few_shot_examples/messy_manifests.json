@@ -1,0 +1,26 @@
+[
+  {
+    "input": "FEDEX WAYBILL: 771234567890. Arrived at the Hillsboro receiving dock on 2026-04-12. Sender: ASML Supplier Corp. Contents: 4 crates containing 300mm Silicon Wafers (SKU: WAF-300-X, 25 units per crate). Also 1 box of replacement laser diodes, part number L-D99 (qty 5).",
+    "expected_output": {
+      "carrier": "FedEx",
+      "tracking_number": "771234567890",
+      "ship_date": null,
+      "estimated_delivery": "2026-04-12",
+      "sender_facility": "ASML Supplier Corp",
+      "line_items": [
+        {
+          "sku": "WAF-300-X",
+          "name": "300mm Silicon Wafers",
+          "quantity": 100,
+          "location_bin": "Hillsboro receiving dock"
+        },
+        {
+          "sku": "L-D99",
+          "name": "replacement laser diodes",
+          "quantity": 5,
+          "location_bin": "Hillsboro receiving dock"
+        }
+      ]
+    }
+  }
+]
