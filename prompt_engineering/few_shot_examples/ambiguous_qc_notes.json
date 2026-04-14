@@ -1,24 +1,37 @@
 [
   {
-    "input": "FEDEX WAYBILL: 771234567890. Arrived at the Hillsboro receiving dock on 2026-04-12. Sender: ASML Supplier Corp. Contents: 4 crates containing 300mm Silicon Wafers (SKU: WAF-300-X, 25 units per crate). Also 1 box of replacement laser diodes, part number L-D99 (qty 5).",
+    "input": "Batch Number: INT-88A4\nNotes: Looked over the latest tray of microprocessors. Most of them are totally fine. However, I noticed that about 3 of the units (serial numbers ending in 401, 402, and 403) had slightly bent pins on the bottom right corner. The rest of the tray (47 units) is good to go into inventory.",
     "expected_output": {
-      "carrier": "FedEx",
-      "tracking_number": "771234567890",
-      "ship_date": null,
-      "estimated_delivery": "2026-04-12",
-      "sender_facility": "ASML Supplier Corp",
-      "line_items": [
+      "batch_number": "INT-88A4",
+      "inspection_date": "2026-04-14",
+      "results": [
         {
-          "sku": "WAF-300-X",
-          "name": "300mm Silicon Wafers",
-          "quantity": 100,
-          "location_bin": "Hillsboro receiving dock"
+          "component_id": "401",
+          "passed_inspection": false,
+          "defect_category": "mechanical",
+          "severity": 3,
+          "inspector_notes_summary": "Slightly bent pins on bottom right corner."
         },
         {
-          "sku": "L-D99",
-          "name": "replacement laser diodes",
-          "quantity": 5,
-          "location_bin": "Hillsboro receiving dock"
+          "component_id": "402",
+          "passed_inspection": false,
+          "defect_category": "mechanical",
+          "severity": 3,
+          "inspector_notes_summary": "Slightly bent pins on bottom right corner."
+        },
+        {
+          "component_id": "403",
+          "passed_inspection": false,
+          "defect_category": "mechanical",
+          "severity": 3,
+          "inspector_notes_summary": "Slightly bent pins on bottom right corner."
+        },
+        {
+          "component_id": "Remaining 47 units",
+          "passed_inspection": true,
+          "defect_category": "unknown",
+          "severity": 1,
+          "inspector_notes_summary": "Units passed inspection with no noted defects."
         }
       ]
     }
