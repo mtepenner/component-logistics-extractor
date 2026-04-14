@@ -1,0 +1,3 @@
+inspector_id,batch_number,date,notes
+EMP-409,BATCH-99X,2026-04-14,"Looked over the 50 processors. 48 are perfect. Unit #12 has a deep scratch across the heat spreader (cosmetic, severity 2). Unit #44 failed the impedance check completely and is a dead board (electrical, severity 5)."
+EMP-211,BATCH-102A,2026-04-14,"Inspected the wiring harnesses. Out of 20, they all passed connectivity tests. However, the bag was missing 2 of the expected grounding screws. Otherwise good."
