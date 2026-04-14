@@ -1,0 +1,22 @@
+manifest_extraction:
+  description: "Extracts logistics data from OCR'd manifests."
+  template: >
+    Analyze the following shipping manifest text and extract the required data into the provided JSON schema.
+    
+    Pay special attention to finding the carrier, tracking number, and a complete list of line items.
+    
+    Raw Manifest Text:
+    {raw_text}
+
+qc_analysis:
+  description: "Categorizes and structures raw inspector notes."
+  template: >
+    You are analyzing notes from a quality control inspector. Map the inspector's observations 
+    into the strict JSON schema provided. 
+    
+    You must categorize the defect using one of the allowed enum values: 'cosmetic', 'electrical', 'mechanical', 'missing_part', or 'unknown'.
+    Rate the severity from 1 (perfect) to 5 (critical failure).
+    
+    Inspector Notes:
+    Batch: {batch_number}
+    Notes: {raw_notes}
