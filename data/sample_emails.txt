@@ -1,0 +1,13 @@
+From: vendor-updates@siliconsupplies.com
+To: inventory-receiving@company.com
+Subject: Delay regarding PO# 44092 - Hillsboro Delivery
+
+Hi team,
+
+Just a heads up regarding your recent order (PO# 44092). The 15 trays of OptiTrack Motion Sensors (SKU: OPTI-M1) have shipped and will arrive by 2026-04-18 via DHL (Waybill: 8829103948). 
+
+However, the specialized mounting brackets (SKU: BRK-M1-C) are currently backordered. We expect to ship the 30 brackets by next Friday. 
+
+Let us know if you need to adjust the order.
+Thanks,
+Sarah
