@@ -1,0 +1,16 @@
+json_correction:
+  description: "Used when the initial LLM output fails schema validation."
+  template: >
+    Your previous attempt to extract data resulted in a JSON schema validation error.
+    
+    Original Input Text:
+    {raw_text}
+    
+    Your Invalid Output:
+    {invalid_json}
+    
+    The System Error:
+    {validation_error}
+    
+    Please correct the output. Ensure that all keys match the schema exactly and all data types are correct. 
+    Output ONLY valid JSON.
